@@ -73,6 +73,12 @@
 		}
 
 		/* Air */
+		#media video,
+		#media iframe {
+			border-radius: 1rem;
+			border: 1px solid tomato;
+			object-fit: cover;
+		}
 	</style>
 </head>
 <body>
@@ -98,7 +104,18 @@
 		</div>
 
 		<div id="media">
-			<!-- Air -->
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/e2VEkTpOlR8?si=waLK5pH5Ze0uIKBH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+			<video
+				src="videos/video-1@c.mp4" 
+				width="640"
+				height="320"
+				controls
+				muted
+				poster="images/video-poster.jpg"
+			>
+				Your browser does not support the video tag.
+			</video>
 		</div>
 	</section>
 </body>
